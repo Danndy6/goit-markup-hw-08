@@ -1,0 +1,29 @@
+.benefits {
+  display: flex;
+}
+.benefits__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.benefits__tumb {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
+
+  background-color: var(--backgroung-second);
+  border-radius: 4px;
+}
+.benefits__icon {
+  width: 70px;
+  height: 70px;
+}
+.benefits__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  @include font(14px, 1.14, 0.03em, var(--secondary-text-color));
+  text-transform: uppercase;
+}
