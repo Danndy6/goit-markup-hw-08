@@ -1,4 +1,7 @@
 .about__section {
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
+  }
   padding-top: 0;
 }
 .about {

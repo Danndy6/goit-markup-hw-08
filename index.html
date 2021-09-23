@@ -163,7 +163,7 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img src="./images/igor.jpg" alt="Фото" width="270" height="260" />
+              <img class="team_photo" src="./images/igor.jpg" alt="Фото" width="270" />
               <div class="team__wrapper">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__descr"><span lang="en">Designer</span></p>
@@ -200,7 +200,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/olga.jpg" alt="Фото" width="270" height="260" />
+              <img class="team_photo" src="./images/olga.jpg" alt="Фото" width="270" />
               <div class="team__wrapper">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__descr"><span lang="en">Frontend Developer</span></p>
@@ -237,7 +237,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/nicolai.jpg" alt="Фото" width="270" height="260" />
+              <img class="team_photo" src="./images/nicolai.jpg" alt="Фото" width="270" />
               <div class="team__wrapper">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__descr"><span lang="en">Marketing</span></p>
@@ -274,7 +274,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/michail.jpg" alt="Фото" width="270" height="260" />
+              <img class="team_photo" src="./images/michail.jpg" alt="Фото" width="270" />
               <div class="team__wrapper">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__descr"><span lang="en">UI Designer</span></p>
@@ -367,64 +367,66 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="address__tumb">
-          <a href="./index.html" class="logo link"
-            ><span lang="en">Web</span><span class="footer__logo" lang="en">Studio</span>
-          </a>
-          <address>
-            <ul class="address">
-              <li>
-                <a
-                  class="address__link--street link"
-                  href="https://goo.gl/maps/5hMurRnCVE9LWL2U6"
-                  target="_blank"
-                  rel="noopener noreferre"
-                  >г. Киев, пр-т Леси Украинки, 26
+        <div class="footer__container--tablet">
+          <div class="address__tumb">
+            <a href="./index.html" class="logo link"
+              ><span lang="en">Web</span><span class="footer__logo" lang="en">Studio</span>
+            </a>
+            <address>
+              <ul class="address">
+                <li>
+                  <a
+                    class="address__link--street link"
+                    href="https://goo.gl/maps/5hMurRnCVE9LWL2U6"
+                    target="_blank"
+                    rel="noopener noreferre"
+                    >г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li>
+                  <a class="address__link link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <h2 class="join__title">Присоединяйтесь</h2>
+            <ul class="social social--join">
+              <li class="social__item">
+                <a href="" class="social__link link social-link--join">
+                  <svg class="social__icon social__icon--join">
+                    <use href="./images/icons.svg#icon-insta"></use>
+                  </svg>
                 </a>
               </li>
-              <li>
-                <a class="address__link link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="social__item">
+                <a href="" class="social__link link social-link--join">
+                  <svg class="social__icon social__icon--join">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="social__item">
+                <a href="" class="social__link link social-link--join">
+                  <svg class="social__icon social__icon--join">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link link social-link--join">
+                  <svg class="social__icon social__icon--join">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join">
-          <h2 class="join__title">Присоединяйтесь</h2>
-          <ul class="social social--join">
-            <li class="social__item">
-              <a href="" class="social__link link social-link--join">
-                <svg class="social__icon social__icon--join">
-                  <use href="./images/icons.svg#icon-insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link link social-link--join">
-                <svg class="social__icon social__icon--join">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link link social-link--join">
-                <svg class="social__icon social__icon--join">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link link social-link--join">
-                <svg class="social__icon social__icon--join">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe">
           <b class="subscribe__title">Подпишитесь на рассылку</b>

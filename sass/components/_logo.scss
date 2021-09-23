@@ -1,8 +1,8 @@
 .logo {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  @include font(24px, 1.12, 0.03em, var(--accent));
+  @media screen and (min-width: $desktop) {
+    @include font(26px, 1.19, 0.03em, var(--accent));
+  }
 }

@@ -4,8 +4,22 @@
   padding-bottom: 60px;
 }
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (max-width: $tablet - 1) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer__container--tablet {
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    align-items: baseline;
+  }
+  @media screen and (min-width: $mobile) and (max-width: $tablet - 1) {
+    justify-content: space-around;
+  }
 }
 .footer__logo {
   color: var(--main-white);
@@ -26,7 +40,12 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .join {
-  margin-left: 70px;
+  @media screen and (max-width: $mobile - 1) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-left: 70px;
+  }
 }
 .join__title,
 .subscribe__title {
@@ -49,16 +68,31 @@
   fill: var(--main-white);
 }
 .subscribe {
-  margin-left: auto;
-  width: 570px;
+  @media screen and (max-width: $tablet - 1) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: $mobile) and (max-width: $tablet - 1) {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    width: 570px;
+  }
 }
 .subscribe__form {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
   margin-top: 20px;
+}
+.subscribe__field {
+  flex-grow: 1;
 }
 .subscribe__input {
   padding: 15px 16px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   @include font(16px, 1.25, 0.03em, rgba(255, 255, 255, 0.6));
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -74,9 +108,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
-
+  @media screen and (max-width: $tablet - 1) {
+    margin: 20px auto 0;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-left: 12px;
+  }
   width: 200px;
+  height: 50px;
   border: 0px;
   background-color: var(--accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
