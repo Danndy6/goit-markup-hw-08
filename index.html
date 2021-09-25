@@ -194,7 +194,26 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img class="team_photo" src="./images/igor.jpg" alt="Фото" width="270" />
+              <picture>
+                <source
+                  srcset="./images/igor.jpg 1200w, ./images/igor@2x.jpg 2400w"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor-t.jpg     768w,
+                    ./images/igor-t@2x.jpg 1536w,
+                    ./images/igor-t@3x.jpg 2304w
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="./images/igor-m.jpg 480w, ./images/igor-m@2x.jpg 960w"
+                  src="./images/igor-m.jpg"
+                  sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
+                  alt="Фото"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__descr"><span lang="en">Designer</span></p>
@@ -231,7 +250,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team_photo" src="./images/olga.jpg" alt="Фото" width="270" />
+              <picture>
+                <source
+                  srcset="./images/olga.jpg 1200w, ./images/olga@2x.jpg 2400w"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-t.jpg     768w,
+                    ./images/olga-t@2x.jpg 1536w,
+                    ./images/olga-t@3x.jpg 2304w
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="./images/olga-m.jpg 480w, ./images/olga-m@2x.jpg 960w"
+                  src="./images/olga-m.jpg"
+                  sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
+                  alt="Фото"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__descr"><span lang="en">Frontend Developer</span></p>
@@ -268,7 +306,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team_photo" src="./images/nicolai.jpg" alt="Фото" width="270" />
+              <picture>
+                <source
+                  srcset="./images/nicolai.jpg 1200w, ./images/nicolai@2x.jpg 2400w"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/nicolai-t.jpg     768w,
+                    ./images/nicolai-t@2x.jpg 1536w,
+                    ./images/nicolai-t@3x.jpg 2304w
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="./images/nicolai-m.jpg 480w, ./images/nicolai-m@2x.jpg 960w"
+                  src="./images/nicolai-m.jpg"
+                  sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
+                  alt="Фото"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__descr"><span lang="en">Marketing</span></p>
@@ -305,7 +362,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team_photo" src="./images/michail.jpg" alt="Фото" width="270" />
+              <picture>
+                <source
+                  srcset="./images/michail.jpg 1200w, ./images/michail@2x.jpg 2400w"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/michail-t.jpg     768w,
+                    ./images/michail-t@2x.jpg 1536w,
+                    ./images/michail-t@3x.jpg 2304w
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="./images/michail-m.jpg 480w, ./images/michail-m@2x.jpg 960w"
+                  src="./images/michail-m.jpg"
+                  sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
+                  alt="Фото"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__descr"><span lang="en">UI Designer</span></p>

@@ -19,11 +19,11 @@
 .filters__btn {
   padding: 6px 22px;
 
+  height: 38px;
   background: var(--backgroung-second);
   font-weight: 500;
   @include font(16px, 1.62, 0.03em, var(--secondary-text-color));
   text-align: center;
-  border: 0px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -76,12 +76,6 @@
 .cards-set__tumb {
   position: relative;
   overflow: hidden;
-}
-.cards-set__img {
-  @media screen and (max-width: $mobile - 1) {
-    width: 450px;
-    height: 294px;
-  }
 }
 .cards-set__overlay {
   position: absolute;

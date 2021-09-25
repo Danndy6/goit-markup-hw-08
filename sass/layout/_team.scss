@@ -6,7 +6,7 @@
   @media screen and (min-width: $mobile) {
     display: flex;
   }
-  @media screen and (min-width: $mobile) and (max-width: $tablet - 1) {
+  @media screen and (min-width: $mobile) and (max-width: $desktop - 1) {
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
@@ -16,7 +16,7 @@
   }
 }
 .team__item {
-  @media screen and (min-width: $mobile) and (max-width: $tablet - 1) {
+  @media screen and (min-width: $mobile) and (max-width: $desktop - 1) {
     flex-basis: calc((100% - 60px) / 2);
     margin-bottom: 30px;
   }
@@ -31,14 +31,6 @@
     @media screen and (max-width: $mobile - 1) {
       margin-bottom: 30px;
     }
-  }
-}
-.team_photo {
-  @media screen and (max-width: $mobile - 1) {
-    width: 450px;
-  }
-  @media screen and (min-width: $mobile) and (max-width: $tablet - 1) {
-    width: 354px;
   }
 }
 .team__wrapper {
