@@ -83,7 +83,7 @@
     height: 4px;
     background-color: var(--accent);
     border-radius: 2px;
-    @media screen and (max-width: $mobile - 1) {
+    @media screen and (max-width: $tablet - 1) {
       display: none;
     }
   }
