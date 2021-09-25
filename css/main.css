@@ -424,14 +424,9 @@ body {
   background-position: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
     height: 600px;
   }
 }
