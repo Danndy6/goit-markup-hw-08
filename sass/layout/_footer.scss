@@ -13,11 +13,11 @@
   }
 }
 .footer__container--tablet {
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: baseline;
   }
-  @media screen and (min-width: $mobile) and (max-width: $desktop - 1) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     justify-content: space-around;
   }
 }
@@ -25,11 +25,11 @@
   color: var(--main-white);
 }
 .address {
+  margin-top: 20px;
   font-style: normal;
 }
 .address__link--street {
   display: block;
-  margin-top: 20px;
 
   color: var(--main-white);
 }
@@ -40,10 +40,10 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .join {
-  @media screen and (max-width: $mobile - 1) {
+  @media screen and (max-width: $tablet - 1) {
     margin-top: 60px;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     margin-left: 70px;
   }
 }
@@ -71,7 +71,7 @@
   @media screen and (max-width: $desktop - 1) {
     margin-top: 60px;
   }
-  @media screen and (min-width: $mobile) and (max-width: $desktop - 1) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     max-width: 450px;
     margin-right: auto;
     margin-left: auto;

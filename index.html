@@ -28,53 +28,58 @@
           ><span lang="en">Web</span><span class="header__logo" lang="en">Studio</span>
         </a>
         <div class="menu-container js-menu-container" id="mobile-menu">
-          <nav class="header__nav">
-            <ul class="navigation">
-              <li class="navigation__item">
-                <a class="navigation__link link navigation__link--current" href="./index.html"
-                  >Студия</a
+          <div class="menu-container--mobile">
+            <nav class="header__nav">
+              <ul class="navigation">
+                <li class="navigation__item">
+                  <a class="navigation__link link navigation__link--current" href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a
+                  class="contacts__link contacts__link--mail link"
+                  href="mailto:info@devstudio.com"
                 >
+                  <svg svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link link" href="">Контакты</a>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--tel link" href="tel:+380961111111">
+                  <svg class="contacts__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
               </li>
             </ul>
-          </nav>
-          <ul class="contacts">
-            <li class="contacts__item">
-              <a class="contacts__link contacts__link--mail link" href="mailto:info@devstudio.com">
-                <svg svg class="contacts__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link contacts__link--tel link" href="tel:+380961111111">
-                <svg class="contacts__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-          <ul class="social-mobile">
-            <li class="social-mobile__item">
-              <a href="" class="link social-mobile__link">Instagram</a>
-            </li>
-            <li class="social-mobile__item">
-              <a href="" class="link social-mobile__link">Twitter</a>
-            </li>
-            <li class="social-mobile__item">
-              <a href="" class="link social-mobile__link">Facebook</a>
-            </li>
-            <li class="social-mobile__item">
-              <a href="" class="link social-mobile__link">LinkedIn</a>
-            </li>
-          </ul>
+            <ul class="social-mobile">
+              <li class="social-mobile__item">
+                <a href="" class="link social-mobile__link">Instagram</a>
+              </li>
+              <li class="social-mobile__item">
+                <a href="" class="link social-mobile__link">Twitter</a>
+              </li>
+              <li class="social-mobile__item">
+                <a href="" class="link social-mobile__link">Facebook</a>
+              </li>
+              <li class="social-mobile__item">
+                <a href="" class="link social-mobile__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
           <button class="close-btn--menu btn js-close-menu" type="button">
             <svg class="close-btn--menu__icon">
               <use href="./images/icons.svg#icon-close"></use>
@@ -196,23 +201,18 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/igor.jpg 1200w, ./images/igor@2x.jpg 2400w"
+                  srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="
-                    ./images/igor-t.jpg     768w,
-                    ./images/igor-t@2x.jpg 1536w,
-                    ./images/igor-t@3x.jpg 2304w
-                  "
+                  srcset="./images/igor-t.jpg 1x, ./images/igor-t@2x.jpg 2x"
                   media="(min-width: 768px)"
                 />
-                <img
-                  srcset="./images/igor-m.jpg 480w, ./images/igor-m@2x.jpg 960w"
-                  src="./images/igor-m.jpg"
-                  sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                  alt="Фото"
+                <source
+                  srcset="./images/igor-m.jpg 1x, ./images/igor-m@2x.jpg 2x"
+                  media="(min-width: 480px)"
                 />
+                <img src="./images/igor-m.jpg" alt="Фото" />
               </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -252,23 +252,18 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/olga.jpg 1200w, ./images/olga@2x.jpg 2400w"
+                  srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="
-                    ./images/olga-t.jpg     768w,
-                    ./images/olga-t@2x.jpg 1536w,
-                    ./images/olga-t@3x.jpg 2304w
-                  "
+                  srcset="./images/olga-t.jpg 1x, ./images/olga-t@2x.jpg 2x"
                   media="(min-width: 768px)"
                 />
-                <img
-                  srcset="./images/olga-m.jpg 480w, ./images/olga-m@2x.jpg 960w"
-                  src="./images/olga-m.jpg"
-                  sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                  alt="Фото"
+                <source
+                  srcset="./images/olga-m.jpg 1x, ./images/olga-m@2x.jpg 2x"
+                  media="(min-width: 480px)"
                 />
+                <img src="./images/olga-m.jpg" alt="Фото" />
               </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Ольга Репина</h3>
@@ -308,23 +303,18 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/nicolai.jpg 1200w, ./images/nicolai@2x.jpg 2400w"
+                  srcset="./images/nicolai.jpg 1x, ./images/nicolai@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="
-                    ./images/nicolai-t.jpg     768w,
-                    ./images/nicolai-t@2x.jpg 1536w,
-                    ./images/nicolai-t@3x.jpg 2304w
-                  "
+                  srcset="./images/nicolai-t.jpg 1x, ./images/nicolai-t@2x.jpg 2x"
                   media="(min-width: 768px)"
                 />
-                <img
-                  srcset="./images/nicolai-m.jpg 480w, ./images/nicolai-m@2x.jpg 960w"
-                  src="./images/nicolai-m.jpg"
-                  sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                  alt="Фото"
+                <source
+                  srcset="./images/nicolai-m.jpg 1x, ./images/nicolai-m@2x.jpg 2x"
+                  media="(min-width: 480px)"
                 />
+                <img src="./images/nicolai-m.jpg" alt="Фото" />
               </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Николай Тарасов</h3>
@@ -364,23 +354,18 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/michail.jpg 1200w, ./images/michail@2x.jpg 2400w"
+                  srcset="./images/michail.jpg 1x, ./images/michail@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="
-                    ./images/michail-t.jpg     768w,
-                    ./images/michail-t@2x.jpg 1536w,
-                    ./images/michail-t@3x.jpg 2304w
-                  "
+                  srcset="./images/michail-t.jpg 1x, ./images/michail-t@2x.jpg 2x"
                   media="(min-width: 768px)"
                 />
-                <img
-                  srcset="./images/michail-m.jpg 480w, ./images/michail-m@2x.jpg 960w"
-                  src="./images/michail-m.jpg"
-                  sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                  alt="Фото"
+                <source
+                  srcset="./images/michail-m.jpg 1x, ./images/michail-m@2x.jpg 2x"
+                  media="(min-width: 480px)"
                 />
+                <img src="./images/michail-m.jpg" alt="Фото" />
               </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Михаил Ермаков</h3>

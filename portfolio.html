@@ -28,53 +28,58 @@
           ><span lang="en">Web</span><span class="header__logo" lang="en">Studio</span>
         </a>
         <div class="menu-container js-menu-container" id="mobile-menu">
-          <nav class="header__nav">
-            <ul class="navigation">
-              <li class="navigation__item">
-                <a class="navigation__link link" href="./index.html">Студия</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link link navigation__link--current" href="./portfolio.html"
-                  >Портфолио</a
+          <div class="menu-container--mobile">
+            <nav class="header__nav">
+              <ul class="navigation">
+                <li class="navigation__item">
+                  <a class="navigation__link link" href="./index.html">Студия</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link link navigation__link--current" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a
+                  class="contacts__link contacts__link--mail link"
+                  href="mailto:info@devstudio.com"
                 >
+                  <svg svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link link" href="">Контакты</a>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--tel link" href="tel:+380961111111">
+                  <svg class="contacts__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
               </li>
             </ul>
-          </nav>
-          <ul class="contacts">
-            <li class="contacts__item">
-              <a class="contacts__link contacts__link--mail link" href="mailto:info@devstudio.com">
-                <svg svg class="contacts__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link contacts__link--tel link" href="tel:+380961111111">
-                <svg class="contacts__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-          <ul class="social-mobile">
-            <li class="social-mobile__item">
-              <a href="" class="link social-mobile__link">Instagram</a>
-            </li>
-            <li class="social-mobile__item">
-              <a href="" class="link social-mobile__link">Twitter</a>
-            </li>
-            <li class="social-mobile__item">
-              <a href="" class="link social-mobile__link">Facebook</a>
-            </li>
-            <li class="social-mobile__item">
-              <a href="" class="link social-mobile__link">LinkedIn</a>
-            </li>
-          </ul>
+            <ul class="social-mobile">
+              <li class="social-mobile__item">
+                <a href="" class="link social-mobile__link">Instagram</a>
+              </li>
+              <li class="social-mobile__item">
+                <a href="" class="link social-mobile__link">Twitter</a>
+              </li>
+              <li class="social-mobile__item">
+                <a href="" class="link social-mobile__link">Facebook</a>
+              </li>
+              <li class="social-mobile__item">
+                <a href="" class="link social-mobile__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
           <button class="close-btn--menu btn js-close-menu" type="button">
             <svg class="close-btn--menu__icon">
               <use href="./images/icons.svg#icon-close"></use>
@@ -117,11 +122,11 @@
           </ul>
           <ul class="cards-set">
             <li class="cards-set__item">
-              <article>
-                <a class="cards-set__link link" href="">
-                  <div class="cards-set__tumb">
-                    <div class="cards-set__overlay">
-                      <p class="cards-set__text">
+              <article class="article">
+                <a class="article__link link" href="">
+                  <div class="article__tumb">
+                    <div class="article__overlay">
+                      <p class="article__text">
                         Технокряк это современная площадка распространения коронавируса. Компании
                         используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.
@@ -129,40 +134,33 @@
                     </div>
                     <picture>
                       <source
-                        srcset="./images/imgsitewhite.jpg 1200w, ./images/imgsitewhite@2x.jpg 2400w"
+                        srcset="./images/imgsitewhite.jpg 1x, ./images/imgsitewhite@2x.jpg 2x"
                         media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="
-                          ./images/imgsitewhite.jpg       768w,
-                          ./images/imgsitewhite-t@2x.jpg 1536w
-                        "
+                        srcset="./images/imgsitewhite-t.jpg 1x, ./images/imgsitewhite-t@2x.jpg 2x"
                         media="(min-width: 768px)"
                       />
-                      <img
-                        srcset="
-                          ./images/imgsitewhite-m.jpg    480w,
-                          ./images/imgsitewhite-m@2x.jpg 960w
-                        "
-                        src="./images/imgsitewhite-m.jpg"
-                        sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                        alt="Веб-сайт"
+                      <source
+                        srcset="./images/imgsitewhite-m.jpg 1x, ./images/imgsitewhite-m@2x.jpg 2x"
+                        media="(min-width: 480px)"
                       />
+                      <img src="./images/imgsitewhite-m.jpg" alt="Веб-сайт" />
                     </picture>
                   </div>
-                  <div class="cards-set__wrapper">
-                    <h2 class="cards-set__title">Технокряк</h2>
-                    <p class="cards-set__descr">Веб-сайт</p>
+                  <div class="article__wrapper">
+                    <h2 class="article__title">Технокряк</h2>
+                    <p class="article__descr">Веб-сайт</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="cards-set__item">
-              <article>
-                <a class="cards-set__link link" href="">
-                  <div class="cards-set__tumb">
-                    <div class="cards-set__overlay">
-                      <p class="cards-set__text">
+              <article class="article">
+                <a class="article__link link" href="">
+                  <div class="article__tumb">
+                    <div class="article__overlay">
+                      <p class="article__text">
                         Технокряк это современная площадка распространения коронавируса. Компании
                         используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.
@@ -170,36 +168,35 @@
                     </div>
                     <picture>
                       <source
-                        srcset="./images/imgposter.jpg 1200w, ./images/imgposter@2x.jpg 2400w"
+                        srcset="./images/imgposter.jpg 1x, ./images/imgposter@2x.jpg 2x"
                         media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="./images/imgposter-t.jpg 768w, ./images/imgposter-t@2x.jpg 1536w"
+                        srcset="./images/imgposter-t.jpg 1x, ./images/imgposter-t@2x.jpg 2x"
                         media="(min-width: 768px)"
                       />
-                      <img
-                        srcset="./images/imgposter-m.jpg 480w, ./images/imgposter-m@2x.jpg 960w"
-                        src="./images/imgposter-m.jpg"
-                        sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                        alt="Постер"
+                      <source
+                        srcset="./images/imgposter-m.jpg 1x, ./images/imgposter-m@2x.jpg 2x"
+                        media="(min-width: 480px)"
                       />
+                      <img src="./images/imgposter-m.jpg" alt="Постер" />
                     </picture>
                   </div>
-                  <div class="cards-set__wrapper">
-                    <h2 class="cards-set__title">
+                  <div class="article__wrapper">
+                    <h2 class="article__title">
                       Постер <span lang="en">New Orlean vs Golden Star</span>
                     </h2>
-                    <p class="cards-set__descr">Дизайн</p>
+                    <p class="article__descr">Дизайн</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="cards-set__item">
-              <article>
-                <a class="cards-set__link link" href="">
-                  <div class="cards-set__tumb">
-                    <div class="cards-set__overlay">
-                      <p class="cards-set__text">
+              <article class="article">
+                <a class="article__link link" href="">
+                  <div class="article__tumb">
+                    <div class="article__overlay">
+                      <p class="article__text">
                         Технокряк это современная площадка распространения коронавируса. Компании
                         используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.
@@ -207,40 +204,33 @@
                     </div>
                     <picture>
                       <source
-                        srcset="./images/imgbrandlogo.jpg 1200w, ./images/imgbrandlogo@2x.jpg 2400w"
+                        srcset="./images/imgbrandlogo.jpg 1x, ./images/imgbrandlogo@2x.jpg 2x"
                         media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="
-                          ./images/imgbrandlogo.jpg       768w,
-                          ./images/imgbrandlogo-t@2x.jpg 1536w
-                        "
+                        srcset="./images/imgbrandlogo-t.jpg 1x, ./images/imgbrandlogo-t@2x.jpg 2x"
                         media="(min-width: 768px)"
                       />
-                      <img
-                        srcset="
-                          ./images/imgbrandlogo-m.jpg    480w,
-                          ./images/imgbrandlogo-m@2x.jpg 960w
-                        "
-                        src="./images/imgbrandlogo-m.jpg"
-                        sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                        alt="Логотип бренда"
+                      <source
+                        srcset="./images/imgbrandlogo-m.jpg 1x, ./images/imgbrandlogo-m@2x.jpg 2x"
+                        media="(min-width: 480px)"
                       />
+                      <img src="./images/imgbrandlogo-m.jpg" alt="Логотип бренда" />
                     </picture>
                   </div>
-                  <div class="cards-set__wrapper">
-                    <h2 class="cards-set__title">Ресторан <span lang="en">Seafood</span></h2>
-                    <p class="cards-set__descr">Приложение</p>
+                  <div class="article__wrapper">
+                    <h2 class="article__title">Ресторан <span lang="en">Seafood</span></h2>
+                    <p class="article__descr">Приложение</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="cards-set__item">
-              <article>
-                <a class="cards-set__link link" href="">
-                  <div class="cards-set__tumb">
-                    <div class="cards-set__overlay">
-                      <p class="cards-set__text">
+              <article class="article">
+                <a class="article__link link" href="">
+                  <div class="article__tumb">
+                    <div class="article__overlay">
+                      <p class="article__text">
                         Технокряк это современная площадка распространения коронавируса. Компании
                         используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.
@@ -248,43 +238,33 @@
                     </div>
                     <picture>
                       <source
-                        srcset="
-                          ./images/imgheadphones.jpg    1200w,
-                          ./images/imgheadphones@2x.jpg 2400w
-                        "
+                        srcset="./images/imgheadphones.jpg 1x, ./images/imgheadphones@2x.jpg 2x"
                         media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="
-                          ./images/imgheadphones.jpg       768w,
-                          ./images/imgheadphones-t@2x.jpg 1536w
-                        "
+                        srcset="./images/imgheadphones-t.jpg 1x, ./images/imgheadphones-t@2x.jpg 2x"
                         media="(min-width: 768px)"
                       />
-                      <img
-                        srcset="
-                          ./images/imgheadphones-m.jpg    480w,
-                          ./images/imgheadphones-m@2x.jpg 960w
-                        "
-                        src="./images/imgheadphones-m.jpg"
-                        sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                        alt="Наушники"
+                      <source
+                        srcset="./images/imgheadphones-m.jpg 1x, ./images/imgheadphones-m@2x.jpg 2x"
+                        media="(min-width: 480px)"
                       />
+                      <img src="./images/imgheadphones-m.jpg" alt="Наушники" />
                     </picture>
                   </div>
-                  <div class="cards-set__wrapper">
-                    <h2 class="cards-set__title">Проект <span lang="en">Prime</span></h2>
-                    <p class="cards-set__descr">Маркетинг</p>
+                  <div class="article__wrapper">
+                    <h2 class="article__title">Проект <span lang="en">Prime</span></h2>
+                    <p class="article__descr">Маркетинг</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="cards-set__item">
-              <article>
-                <a class="cards-set__link link" href="">
-                  <div class="cards-set__tumb">
-                    <div class="cards-set__overlay">
-                      <p class="cards-set__text">
+              <article class="article">
+                <a class="article__link link" href="">
+                  <div class="article__tumb">
+                    <div class="article__overlay">
+                      <p class="article__text">
                         Технокряк это современная площадка распространения коронавируса. Компании
                         используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.
@@ -292,34 +272,33 @@
                     </div>
                     <picture>
                       <source
-                        srcset="./images/imgboxes.jpg 1200w, ./images/imgboxes@2x.jpg 2400w"
+                        srcset="./images/imgboxes.jpg 1x, ./images/imgboxes@2x.jpg 2x"
                         media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="./images/imgboxes.jpg 768w, ./images/imgboxes-t@2x.jpg 1536w"
+                        srcset="./images/imgboxes-t.jpg 1x, ./images/imgboxes-t@2x.jpg 2x"
                         media="(min-width: 768px)"
                       />
-                      <img
-                        srcset="./images/imgboxes-m.jpg 480w, ./images/imgboxes-m@2x.jpg 960w"
-                        src="./images/imgboxes-m.jpg"
-                        sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                        alt="Коробочки"
+                      <source
+                        srcset="./images/imgboxes-m.jpg 1x, ./images/imgboxes-m@2x.jpg 2x"
+                        media="(min-width: 480px)"
                       />
+                      <img src="./images/imgboxes-m.jpg" alt="Коробочки" />
                     </picture>
                   </div>
-                  <div class="cards-set__wrapper">
-                    <h2 class="cards-set__title">Проект <span lang="en">Boxes</span></h2>
-                    <p class="cards-set__descr">Приложение</p>
+                  <div class="article__wrapper">
+                    <h2 class="article__title">Проект <span lang="en">Boxes</span></h2>
+                    <p class="article__descr">Приложение</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="cards-set__item">
-              <article>
-                <a class="cards-set__link link" href="">
-                  <div class="cards-set__tumb">
-                    <div class="cards-set__overlay">
-                      <p class="cards-set__text">
+              <article class="article">
+                <a class="article__link link" href="">
+                  <div class="article__tumb">
+                    <div class="article__overlay">
+                      <p class="article__text">
                         Технокряк это современная площадка распространения коронавируса. Компании
                         используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.
@@ -327,42 +306,35 @@
                     </div>
                     <picture>
                       <source
-                        srcset="./images/imgsiteblack.jpg 1200w, ./images/imgsiteblack@2x.jpg 2400w"
+                        srcset="./images/imgsiteblack.jpg 1x, ./images/imgsiteblack@2x.jpg 2x"
                         media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="
-                          ./images/imgsiteblack.jpg       768w,
-                          ./images/imgsiteblack-t@2x.jpg 1536w
-                        "
+                        srcset="./images/imgsiteblack-t.jpg 1x, ./images/imgsiteblack-t@2x.jpg 2x"
                         media="(min-width: 768px)"
                       />
-                      <img
-                        srcset="
-                          ./images/imgsiteblack-m.jpg    480w,
-                          ./images/imgsiteblack-m@2x.jpg 960w
-                        "
-                        src="./images/imgsiteblack-m.jpg"
-                        sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                        alt="Веб-сайт"
+                      <source
+                        srcset="./images/imgsiteblack-m.jpg 1x, ./images/imgsiteblack-m@2x.jpg 2x"
+                        media="(min-width: 480px)"
                       />
+                      <img src="./images/imgsiteblack-m.jpg" alt="Веб-сайт" />
                     </picture>
                   </div>
-                  <div class="cards-set__wrapper">
-                    <h2 class="cards-set__title">
+                  <div class="article__wrapper">
+                    <h2 class="article__title">
                       <span lang="en">Inspiration has no Borders</span>
                     </h2>
-                    <p class="cards-set__descr">Веб-сайт</p>
+                    <p class="article__descr">Веб-сайт</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="cards-set__item">
-              <article>
-                <a class="cards-set__link link" href="">
-                  <div class="cards-set__tumb">
-                    <div class="cards-set__overlay">
-                      <p class="cards-set__text">
+              <article class="article">
+                <a class="article__link link" href="">
+                  <div class="article__tumb">
+                    <div class="article__overlay">
+                      <p class="article__text">
                         Технокряк это современная площадка распространения коронавируса. Компании
                         используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.
@@ -370,34 +342,33 @@
                     </div>
                     <picture>
                       <source
-                        srcset="./images/imgbook.jpg 1200w, ./images/imgbook@2x.jpg 2400w"
+                        srcset="./images/imgbook.jpg 1x, ./images/imgbook@2x.jpg 2x"
                         media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="./images/imgbook.jpg 768w, ./images/imgbook-t@2x.jpg 1536w"
+                        srcset="./images/imgbook-t.jpg 1x, ./images/imgbook-t@2x.jpg 2x"
                         media="(min-width: 768px)"
                       />
-                      <img
-                        srcset="./images/imgbook-m.jpg 480w, ./images/imgbook-m@2x.jpg 960w"
-                        src="./images/imgbook-m.jpg"
-                        sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                        alt="Буклет"
+                      <source
+                        srcset="./images/imgbook-m.jpg 1x, ./images/imgbook-m@2x.jpg 2x"
+                        media="(min-width: 480px)"
                       />
+                      <img src="./images/imgbook-m.jpg" alt="Буклет" />
                     </picture>
                   </div>
-                  <div class="cards-set__wrapper">
-                    <h2 class="cards-set__title">Издание <span lang="en">Limited Edition</span></h2>
-                    <p class="cards-set__descr">Дизайн</p>
+                  <div class="article__wrapper">
+                    <h2 class="article__title">Издание <span lang="en">Limited Edition</span></h2>
+                    <p class="article__descr">Дизайн</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="cards-set__item">
-              <article>
-                <a class="cards-set__link link" href="">
-                  <div class="cards-set__tumb">
-                    <div class="cards-set__overlay">
-                      <p class="cards-set__text">
+              <article class="article">
+                <a class="article__link link" href="">
+                  <div class="article__tumb">
+                    <div class="article__overlay">
+                      <p class="article__text">
                         Технокряк это современная площадка распространения коронавируса. Компании
                         используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.
@@ -405,34 +376,33 @@
                     </div>
                     <picture>
                       <source
-                        srcset="./images/imglable.jpg 1200w, ./images/imglable@2x.jpg 2400w"
+                        srcset="./images/imglable.jpg 1x ./images/imglable@2x.jpg 2x"
                         media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="./images/imglable.jpg 768w, ./images/imglable-t@2x.jpg 1536w"
+                        srcset="./images/imglable-t.jpg 1x, ./images/imglable-t@2x.jpg 2x"
                         media="(min-width: 768px)"
                       />
-                      <img
-                        srcset="./images/imglable-m.jpg 480w, ./images/imglable-m@2x.jpg 960w"
-                        src="./images/imglable-m.jpg"
-                        sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                        alt="Бирка"
+                      <source
+                        srcset="./images/imglable-m.jpg 1x, ./images/imglable-m@2x.jpg 2x"
+                        media="(min-width: 480px)"
                       />
+                      <img src="./images/imglable-m.jpg" alt="Бирка" />
                     </picture>
                   </div>
-                  <div class="cards-set__wrapper">
-                    <h2 class="cards-set__title">Проект <span lang="en">LAB</span></h2>
-                    <p class="cards-set__descr">Маркетинг</p>
+                  <div class="article__wrapper">
+                    <h2 class="article__title">Проект <span lang="en">LAB</span></h2>
+                    <p class="article__descr">Маркетинг</p>
                   </div>
                 </a>
               </article>
             </li>
             <li class="cards-set__item">
-              <article>
-                <a class="cards-set__link link" href="">
-                  <div class="cards-set__tumb">
-                    <div class="cards-set__overlay">
-                      <p class="cards-set__text">
+              <article class="article">
+                <a class="article__link link" href="">
+                  <div class="article__tumb">
+                    <div class="article__overlay">
+                      <p class="article__text">
                         Технокряк это современная площадка распространения коронавируса. Компании
                         используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                         конкурентов.
@@ -440,24 +410,23 @@
                     </div>
                     <picture>
                       <source
-                        srcset="./images/imgnotepad.jpg 1200w, ./images/imgnotepad@2x.jpg 2400w"
+                        srcset="./images/imgnotepad.jpg 1x, ./images/imgnotepad@2x.jpg 2x"
                         media="(min-width: 1200px)"
                       />
                       <source
-                        srcset="./images/imgnotepad.jpg 768w, ./images/imgnotepad-t@2x.jpg 1536w"
+                        srcset="./images/imgnotepad-t.jpg 1x, ./images/imgnotepad-t@2x.jpg 2x"
                         media="(min-width: 768px)"
                       />
-                      <img
-                        srcset="./images/imgnotepad-m.jpg 480w, ./images/imgnotepad-m@2x.jpg 960w"
-                        src="./images/imgnotepad-m.jpg"
-                        sizes="(min-widht: 1200px) 25vw, (min-width: 480px) 50vw, 100vw"
-                        alt="Приложение на экране"
+                      <source
+                        srcset="./images/imgnotepad-m.jpg 1x, ./images/imgnotepad-m@2x.jpg 2x"
+                        media="(min-width: 480px)"
                       />
+                      <img src="./images/imgnotepad-m.jpg" alt="Приложение на экране" />
                     </picture>
                   </div>
-                  <div class="cards-set__wrapper">
-                    <h2 class="cards-set__title"><span lang="en">Growing Business</span></h2>
-                    <p class="cards-set__descr">Приложение</p>
+                  <div class="article__wrapper">
+                    <h2 class="article__title"><span lang="en">Growing Business</span></h2>
+                    <p class="article__descr">Приложение</p>
                   </div>
                 </a>
               </article>

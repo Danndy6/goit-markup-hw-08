@@ -3,20 +3,20 @@
 }
 .team {
   margin-top: 30px;
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $tablet) {
     display: flex;
   }
-  @media screen and (min-width: $mobile) and (max-width: $desktop - 1) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     margin-top: 50px;
   }
 }
 .team__item {
-  @media screen and (min-width: $mobile) and (max-width: $desktop - 1) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     flex-basis: calc((100% - 60px) / 2);
     margin-bottom: 30px;
   }
@@ -25,10 +25,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   &:not(:last-child) {
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $tablet) {
       margin-right: 30px;
     }
-    @media screen and (max-width: $mobile - 1) {
+    @media screen and (max-width: $tablet - 1) {
       margin-bottom: 30px;
     }
   }
