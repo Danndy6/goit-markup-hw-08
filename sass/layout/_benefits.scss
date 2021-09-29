@@ -9,19 +9,21 @@
   }
 }
 .benefits__item {
-  @media screen and (min-width: $tablet) {
-    width: 354px;
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     flex-basis: calc((100% - 60px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 354px;
   }
   @media screen and (min-width: $desktop) {
     width: 270px;
   }
   &:not(:last-child) {
-    @media screen and (min-width: $tablet) {
-      margin-right: 30px;
-    }
-    @media screen and (max-width: $desktop - 1) {
+    @media screen and (max-width: $tablet - 1) {
       margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
     }
   }
 }

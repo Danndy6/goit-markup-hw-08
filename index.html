@@ -165,27 +165,49 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="about">
             <li class="about__item">
-              <img src="./images/programer.jpg" alt="программист работает за столом" width="370" />
+              <picture>
+                <source
+                  srcset="./images/programer.jpg 1x, ./images/programer@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/programer.jpg"
+                  loading="lazy"
+                  alt="программист работает за столом"
+                />
+              </picture>
               <div class="about__label">
                 <p class="about__descr">Десктопные приложения</p>
               </div>
             </li>
             <li class="about__item">
-              <img
-                src="./images/designer.jpg"
-                alt="веб-дизайнер и мобильный интерфейс"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/designer.jpg 1x, ./images/designer@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/designer.jpg"
+                  loading="lazy"
+                  alt="веб-дизайнер и мобильный интерфейс"
+                />
+              </picture>
               <div class="about__label">
                 <p class="about__descr">Мобильные приложения</p>
               </div>
             </li>
             <li class="about__item">
-              <img
-                src="./images/creative.jpg"
-                alt="креативный художник с графическим планшетом"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/creative.jpg 1x, ./images/creative@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/creative.jpg"
+                  loading="lazy"
+                  alt="креативный художник с графическим планшетом"
+                />
+              </picture>
               <div class="about__label">
                 <p class="about__descr">Дизайнерские решения</p>
               </div>

@@ -20,13 +20,18 @@
     flex-basis: calc((100% - 90px) / 3);
     width: 226px;
   }
+  @media screen and (max-width: $desktop - 1) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: $desktop) {
     width: 170px;
   }
   height: 92px;
   &:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
   }
 }
 .clients__link {
